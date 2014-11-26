@@ -1,35 +1,41 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="javascript-alleranfang : ">
 
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
-    <title>javascript-alleranfang by hofrob</title>
+    <title>javascript-alleranfang</title>
   </head>
 
   <body>
 
-    <header>
-      <div class="container">
-        <h1>javascript-alleranfang</h1>
-        <h2></h2>
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/hofrob/JavaScript-AllerAnfang">View on GitHub</a>
 
-        <section id="downloads">
-          <a href="https://github.com/hofrob/JavaScript-AllerAnfang/zipball/master" class="btn">Download as .zip</a>
-          <a href="https://github.com/hofrob/JavaScript-AllerAnfang/tarball/master" class="btn">Download as .tar.gz</a>
-          <a href="https://github.com/hofrob/JavaScript-AllerAnfang" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
-        </section>
-      </div>
-    </header>
+          <h1 id="project_title">javascript-alleranfang</h1>
+          <h2 id="project_tagline"></h2>
 
-    <div class="container">
-      <section id="main_content">
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/hofrob/JavaScript-AllerAnfang/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/hofrob/JavaScript-AllerAnfang/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
         <h1>
 <a id="variablen" class="anchor" href="#variablen" aria-hidden="true"><span class="octicon octicon-link"></span></a>Variablen</h1>
+
+<h2>
+<a id="simple-variablen" class="anchor" href="#simple-variablen" aria-hidden="true"><span class="octicon octicon-link"></span></a>Simple Variablen</h2>
 
 <p>Variablen müssen deklariert werden:</p>
 
@@ -49,9 +55,40 @@
 <pre><code>var kontaktName = '',
     kontaktNummer = '+43 ';
 </code></pre>
+
+<h2>
+<a id="komplexe-variablen" class="anchor" href="#komplexe-variablen" aria-hidden="true"><span class="octicon octicon-link"></span></a>Komplexe Variablen</h2>
+
+<p>Ein Array ist eine Liste von Werten:</p>
+
+<pre><code>var filme = [
+    'M',
+    'Es',
+    'Up',
+    'The Assassination of Jesse James by the Coward Robert Ford'
+];
+</code></pre>
+
+<p>Arrays sind nicht sortiert und Elemente sind nicht verpflichtend vom selben Datentyp. Das heißt folgendes Array ist valide aber nicht empfehlenswert:</p>
+
+<pre><code>var chaos = [
+    4,
+    'Hello',
+    7.7
+];
+</code></pre>
       </section>
     </div>
 
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">javascript-alleranfang maintained by <a href="https://github.com/hofrob">hofrob</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
     
+
   </body>
 </html>
