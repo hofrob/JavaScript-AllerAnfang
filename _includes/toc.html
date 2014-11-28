@@ -1,0 +1,9 @@
+<h1>Inhalt</h1>
+<ul>
+    {% assign pageinfos = site.html_pages | sort: 'toc' %}
+    {% for info in pageinfos %}
+    <li>
+        <a href="{{ info.url }}">{{ info.title }}</a>
+    </li>
+    {% endfor %}
+</ul>
