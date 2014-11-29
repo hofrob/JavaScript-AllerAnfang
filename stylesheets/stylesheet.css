@@ -134,13 +134,14 @@ ul li {
 }
 
 ul li:before {
-  content: ">>";
+  content: "";
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   font-size: 13px;
   color: #b5e853;
   margin-left: -37px;
   margin-right: 21px;
   line-height: 16px;
+  position: absolute;
 }
 
 blockquote {
@@ -244,4 +245,14 @@ a {
 
 .cf {
   zoom:1;
+}
+
+ul li.current:before {
+	content: ">>";
+}
+
+section#toc {
+	margin-top: 30px;
+	border-top: 1px dashed #b5e853;
+	padding-top: 20px;
 }

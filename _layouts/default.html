@@ -1,39 +1,60 @@
 <html>
-	<head>
-	    <meta charset="utf-8">
-	    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-	
-	    <link rel="stylesheet" type="text/css" href="{{ site.github.url }}/stylesheets/stylesheet.css" media="screen">
-	    <link rel="stylesheet" type="text/css" href="{{ site.github.url }}/stylesheets/pygment_trac.css" media="screen">
-	
-	    <title>{{page.title}}</title>
-	</head>
-<body>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="chrome=1">
 
-    <header>
-      <div class="container">
-        <h1>javascript-alleranfang</h1>
-        <h2></h2>
+        <link rel="stylesheet" type="text/css" href="{{ site.url }}/stylesheets/stylesheet.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="{{ site.url }}/stylesheets/pygment_trac.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="{{ site.url }}/stylesheets/main.css" media="screen">
 
-        <section id="downloads">
-          <a href="https://github.com/hofrob/JavaScript-AllerAnfang/zipball/master" class="btn">Download as .zip</a>
-          <a href="https://github.com/hofrob/JavaScript-AllerAnfang/tarball/master" class="btn">Download as .tar.gz</a>
-          <a href="https://github.com/hofrob/JavaScript-AllerAnfang" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
-        </section>
-      </div>
-    </header>
+        <title>{{page.title}}</title>
+    </head>
+    <body>
 
-    <div class="container">
-      <section id="main_content">
-		{{ content }}
-      </section>
-    </div>
+        <header>
+            <div class="container">
+                <h1>javascript-alleranfang</h1>
+                <h2></h2>
 
-    <div class="container">
-        <section id="toc">
-            {% include toc.html %}
-        </section>
-    </div>
-  
-</body>
+                <section id="downloads">
+                    <a href="https://github.com/hofrob/JavaScript-AllerAnfang/zipball/master" class="btn">Download as .zip</a>
+                    <a href="https://github.com/hofrob/JavaScript-AllerAnfang/tarball/master" class="btn">Download as .tar.gz</a>
+                    <a href="https://github.com/hofrob/JavaScript-AllerAnfang" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+                </section>
+            </div>
+        </header>
+		{% assign nexttoc = page.toc | plus: 1 %}
+		{% assign prevtoc = page.toc | minus: 1 %}
+		{% assign next = false %}
+		{% assign prev = false %}
+		{% for pageinfo in site.html_pages %}
+			{% if pageinfo.toc == nexttoc %}
+				{% assign next = pageinfo %}
+			{% endif %}
+			{% if pageinfo.toc == prevtoc %}
+				{% assign prev = pageinfo %}
+			{% endif %}
+		{% endfor %}
+
+        <div class="container">
+			{% if prev %}
+				Voriger Schritt: <a href="{{ prev.url }}">{{ prev.title }}</a>
+			{% endif %}
+
+            <section id="main_content">
+                {{ content }}
+            </section>
+
+			{% if next %}
+				Nächster Schritt: <a href="{{ next.url }}">{{ next.title }}</a>
+			{% endif %}
+        </div>
+
+		<section id="toc">
+			<div class="container">
+				{% include toc.html %}
+			</div>
+		</section>
+
+    </body>
 </html>

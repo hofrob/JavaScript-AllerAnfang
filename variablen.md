@@ -43,9 +43,19 @@ var filme = [
 ];
 {% endhighlight %}
 
+Um den Wert eines Elements zu erhalten benötigt man dessen Position. Diese Position
+nennt man Index. Der Index beginnt immer bei `0`. Um einen Index zu wählen benutzt
+man eckige Klammern.
+
+{% highlight javascript linenos %}
+filme[0]; // 'M'
+filme[2]; // 'Up'
+{% endhighlight %}
+
 ### Objekt
 
-Ein Objekt ist eine Variable die Eigenschaften hat. Diese Eigenschaften haben einen Namen und einen Wert.
+Ein Objekt ist eine Variable die Eigenschaften hat. Diese Eigenschaften haben
+einen Namen und einen Wert.
 
 {% highlight javascript linenos %}
 var kontakt = {
@@ -54,3 +64,17 @@ var kontakt = {
 }
 {% endhighlight %}
 
+Um den Wert einer der Eigenschaften zu erhalten benutzt man einen Punkt.
+
+{% highlight javascript linenos %}
+kontakt.name; // 'Alice'
+kontakt.nummer; // '+43 9 99 99 999'
+{% endhighlight %}
+
+Außerdem ist es in JavaScript auch möglich Eigenschaften von Objekten mittels
+eckigen Klammern abzufragen.
+
+{% highlight javascript linenos %}
+kontakt['name']; // 'Alice'
+kontakt['nummer']; // '+43 9 99 99 999'
+{% endhighlight %}

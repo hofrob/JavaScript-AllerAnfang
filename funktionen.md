@@ -4,7 +4,8 @@ toc: 4
 ---
 # {{ page.title }}
 
-So wie Variablen, kann man auch Funktionen deklarieren.
+So wie Variablen, kann man auch Funktionen deklarieren. Die Syntax ist aber eine
+andere.
 
 {% highlight javascript linenos %}
 function eineNeueFunktion() {
