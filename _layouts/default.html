@@ -38,7 +38,7 @@
 
         <div class="container">
 			{% if prev %}
-				Voriger Schritt: <a href="{{ prev.url }}">{{ prev.title }}</a>
+				Voriger Schritt: <a href="{{ site.github.url }}{{ prev.url }}">{{ prev.title }}</a>
 			{% endif %}
 
             <section id="main_content">
@@ -46,7 +46,7 @@
             </section>
 
 			{% if next %}
-				Nächster Schritt: <a href="{{ next.url }}">{{ next.title }}</a>
+				Nächster Schritt: <a href="{{ site.github.url }}{{ next.url }}">{{ next.title }}</a>
 			{% endif %}
         </div>
 
