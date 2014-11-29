@@ -44,8 +44,8 @@ var filme = [
 {% endhighlight %}
 
 Um den Wert eines Elements zu erhalten benötigt man dessen Position. Diese Position
-nennt man Index. Der Index beginnt immer bei `0`. Um einen Index zu wählen benutzt
-man eckige Klammern.
+nennt man Index. Der Index beginnt immer bei `0`. Um einen bestimmten Index abzufragen
+benutzt man eckige Klammern.
 
 {% highlight javascript linenos %}
 filme[0]; // 'M'

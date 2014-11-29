@@ -16,7 +16,7 @@ Fehler nachzustellen. Unter anderem werden folgende Bereiche von JSFiddle abgede
 ## Übung
 
 Probiere damit jetzt eine Funktion zu deklarieren und aufzurufen. Um auch etwas
-zu sehen kannst du die Funktion "alert();" aufrufen.
+zu sehen kannst du die Funktion `alert()` aufrufen.
 
 {% highlight javascript linenos %}
 function eineNeueFunktion() {

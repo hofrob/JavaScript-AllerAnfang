@@ -27,7 +27,7 @@ installiert werden. Dieses kann dann über das Käfer-Icon aktiviert werden.
 
 ### Elemente
 
-Zeigt den Quellcode (HTML) an den der Browser gerade anzeigt. Hier kann die Struktur
+Zeigt den Quellcode (HTML) an, den der Browser gerade anzeigt. Hier kann die Struktur
 des HTML untersucht und verändert werden.
 
 ### Konsole
@@ -43,9 +43,13 @@ Die Variable "kontaktName" ist jetzt mit dem Wert "Alice" deklariert. Den Wert
 kann man jetzt abfragen indem man einfach den Variablennamen eintippt und Enter
 drückt.
 
+{% highlight javascript linenos %}
+kontaktName
+{% endhighlight %}
+
 ## Übung
 
-Probiere selbst aus [Variablen]({{ site.github.url }}/variablen.html) zu deklarieren.
+Probiere selbst [Variablen]({{ site.github.url }}/variablen.html) zu deklarieren.
 Gehe auf ein leeres Browserfenster und öffne die Konsole. Erstelle dort eine
 Zeichenkette, eine Variable mit einer ganzen Zahl, ein Array und ein Objekt.
 

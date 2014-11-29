@@ -15,20 +15,19 @@ function eineNeueFunktion(einParameter, nochEinParameter) {
 eineNeueFunktion(1, 2);
 {% endhighlight %}
 
-Beim Aufruf werden die Werte in der Klammer in der gewünschten Reihenfolge mitgegeben.
+Beim Aufruf werden die Werte in der Klammer `(1, 2)` an die Funktion mitgegeben.
 
-Innerhalb der Funktion werden diese Werte dann den Variablen laut Deklaration zugewiesen.
-Mit Hilfe dieser Variablen kann man die mitgegebenen Werte innerhalb der Funktion
-dann weiter benutzen.
+Innerhalb der Funktion werden diese Werte dann den Variablen in der Deklaration zugewiesen.
+Mit Hilfe dieser Variablen kann man die mitgegebenen Werte dann weiter benutzen.
 
 ## alert
 
-alert ist auch eine Funktion. Sie akzeptiert einen Parameter der dann in dem Fenster
+`alert()` ist auch eine Funktion. Sie akzeptiert einen Parameter der dann in dem Fenster
 angezeigt wird.
 
 ## Übung
 
-Gib deiner Funktion zwei Werte mit die nacheinander mit `alert();` angezeigt werden
+Gib deiner Funktion zwei Werte mit die nacheinander mit `alert()` angezeigt werden
 sollen.
 
 {% highlight javascript linenos %}
