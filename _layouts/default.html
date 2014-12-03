@@ -15,14 +15,8 @@
 
         <header>
             <div class="container">
-                <h1>javascript-alleranfang</h1>
-                <h2></h2>
-
-                <section id="downloads">
-                    <a href="https://github.com/hofrob/JavaScript-AllerAnfang/zipball/gh-pages" class="btn">Download as .zip</a>
-                    <a href="https://github.com/hofrob/JavaScript-AllerAnfang/tarball/gh-pages" class="btn">Download as .tar.gz</a>
-                    <a href="https://github.com/hofrob/JavaScript-AllerAnfang" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
-                </section>
+                <h1><a class="title" href="{{ site.github.url }}/">JavaScript - aller Anfang</a></h1>
+                <!--<h2></h2>-->
             </div>
         </header>
 		{% assign nexttoc = page.toc | plus: 1 %}
@@ -58,5 +52,11 @@
 			</div>
 		</section>
 
+		<section id="downloads">
+			<div class="container">	<a href="https://github.com/hofrob/JavaScript-AllerAnfang/zipball/gh-pages" class="btn">Download as .zip</a>
+				<a href="https://github.com/hofrob/JavaScript-AllerAnfang/tarball/gh-pages" class="btn">Download as .tar.gz</a>
+				<a href="https://github.com/hofrob/JavaScript-AllerAnfang" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+			</div>
+		</section>
     </body>
 </html>
