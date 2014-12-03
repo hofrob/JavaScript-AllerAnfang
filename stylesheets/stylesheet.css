@@ -260,12 +260,3 @@ section#toc {
 	border-top: 1px dashed #b5e853;
 	padding-top: 20px;
 }
-
-@media (min-resolution: 2dppx) {
-
-	.container {
-		width: 90%;
-		max-width: 1200px;
-		margin: 0 auto;
-	}
-}
