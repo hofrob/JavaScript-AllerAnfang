@@ -32,19 +32,19 @@
 			{% endif %}
 		{% endfor %}
 
-        <div class="container">
-			{% if prev %}
-				Voriger Schritt: <a href="{{ site.github.url }}{{ prev.url }}">{{ prev.title }}</a>
-			{% endif %}
+		<section id="main_content">
+			<div class="container">
+				{% if prev %}
+					<span class="prev">Zurück: <a href="{{ site.github.url }}{{ prev.url }}" title="{{ prev.title }}">{{ prev.title }}</a></span>
+				{% endif %}
 
-            <section id="main_content">
-                {{ content }}
-            </section>
+				{{ content }}
 
-			{% if next %}
-				Nächster Schritt: <a href="{{ site.github.url }}{{ next.url }}">{{ next.title }}</a>
-			{% endif %}
-        </div>
+				{% if next %}
+					<span class="next">Weiter: <a href="{{ site.github.url }}{{ next.url }}" title="{{ next.title }}">{{ next.title }}</a></span>
+				{% endif %}
+			</div>
+		</section>
 
 		<section id="toc">
 			<div class="container">
@@ -52,11 +52,8 @@
 			</div>
 		</section>
 
-		<section id="downloads">
-			<div class="container">	<a href="https://github.com/hofrob/JavaScript-AllerAnfang/zipball/gh-pages" class="btn">Download as .zip</a>
-				<a href="https://github.com/hofrob/JavaScript-AllerAnfang/tarball/gh-pages" class="btn">Download as .tar.gz</a>
-				<a href="https://github.com/hofrob/JavaScript-AllerAnfang" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
-			</div>
-		</section>
+		<footer>
+			<a href="https://github.com/hofrob/JavaScript-AllerAnfang" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+		</footer>
     </body>
 </html>
