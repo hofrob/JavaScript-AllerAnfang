@@ -1,3 +1,15 @@
 a.current {
     font-style: italic;
 }
+
+span.lineno {
+	color: white;
+}
+
+span.lineno:after {
+	content: ":";
+}
+
+code {
+	color: #b5e853;
+}
